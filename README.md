@@ -4,7 +4,7 @@
 * 기본기를 탄탄하게 갖추고, 지속적인 공부를 통해 배움을 멈추지 않는 것이 목표이다.
 * 매일 글을 Commit 하는게 목적이 아닌, 꾸준히 공부하는 것이 목적이다.
 
-[JayJin](https://github.com/milooy)님, [Lee HyunJoo](https://wayhome25.github.io/)님, [namjunemy](https://github.com/namjunemy)님의 Github TIL을 보고 많은 영감을 얻었다.  
+[johngrib](https://johngrib.github.io/) ,[JayJin](https://github.com/milooy)님, [Lee HyunJoo](https://wayhome25.github.io/)님, [namjunemy](https://github.com/namjunemy)님의 Github TIL을 보고 많은 영감을 얻었다.  
 
 
 
