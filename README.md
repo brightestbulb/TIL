@@ -13,6 +13,10 @@
 * 해당 문서를 다시 봤을 때, 추가적인 비용이 들어가지 않도록 자세히 기록한다.
 
 
+## 개인 공부 현황
+[개인 공부 현황판](https://www.notion.so/bright1stbulb/a25ae7b1cc024510a74d2a1df7de1db7?v=58028a6f9232420aa4498f776ba04d73)
+
+
 
 ## 참고
 Chrome 확장 프로그램 [Octotree](https://chrome.google.com/webstore/detail/octotree/bkhaagjahfmjljalopjnoealnfndnagc)를 설치하면 좀 더 편하게 Github를 사용할 수 있다.
