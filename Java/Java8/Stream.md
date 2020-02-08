@@ -3,7 +3,7 @@
 Stream은 Java에 추가된 기능으로 **배열, 컬랙션** 등의 저장 요소를 하나씩 참조하며 함수형 인터페이스(람다식)를 사용하며   
 반복적으로 처리할 수 있도록 해주는 기능이다.
 
-### Stream 생성 방법
+## Stream 생성 방법
 ```java
     
     List<Integer> list = Arrays.asList(5, 1, 4, 2, 3);
@@ -38,15 +38,15 @@ Stream은 Java에 추가된 기능으로 **배열, 컬랙션** 등의 저장 요
 ```
 
 
-### Stream 사용 방식
+## Stream 사용 방식
 
 **Collections같은 객체 집합.스트림 생성().중개 연산().최종 연산();** 이런 파이프라인 방식으로 사용한다.   
 
 중개 연산과 최종 연산에 어떤것들이 있는지 살펴보자.   
 
 
-#### 중개 연산
-##### Filter
+### 중개 연산
+##### 1. Filter
 조건에 맞는 것만 걸러서 반환한다.
 ```java
 List<String> list = Arrays.asList("5", "1", "4", "2", "3");
@@ -54,7 +54,7 @@ List<String> list = Arrays.asList("5", "1", "4", "2", "3");
 Stream<String> result = list.stream().filter(x -> x.contains("3"));  // 3 반환하여 result에 저장.
 ```
 
-##### Map
+##### 2. Map
 map은 스트림 각 요소를 연산하는데 사용된다. 다음 코드는 각 숫자를 *2 하는 연산을 하고 출력한다. 
 ```java
 List<Integer> list = Arrays.asList(5, 1, 4, 2, 3);
@@ -62,8 +62,8 @@ List<Integer> list = Arrays.asList(5, 1, 4, 2, 3);
 list.stream().map((x) ->{return x*2;}).forEach(x -> System.out.println(x));  // 10, 2, 8, 4, 6
 ```
 
-#### 최종 연산
-##### reduce
+### 최종 연산
+##### 1. reduce
 reduce는 값을 누적하여 계산할 때 사용한다. Collection에 있는 값 중 2개를 꺼내서 계산을 한다.   
 a,b에 2개의 값을 넣어서 a+b를 진행하고, 그 결과 값이 a가 되고, 스트림에서 꺼낸 다음 값이 b가 되어 연산이 진행 된다.
 ```java
@@ -71,7 +71,7 @@ List<Integer> list = Arrays.asList(1, 2, 3);
 list.stream().reduce((a,b) -> a+b).get();  // 6
 ```
 
-##### collect
+##### 2. collect
 Stream의 값들을 toMap, toSet, toList로 다른 Collection으로 바꿔 준다.
 ```java
 List<Integer> list = Arrays.asList(1, 2, 3);
@@ -80,7 +80,7 @@ Set<Integer> set = list.stream().collect(Collectors.toSet());  // list -> set
 set.forEach(x-> System.out.println(x));  //1, 2, 3
 ```
 
-##### min, max, count
+##### 3. min, max, count
 가장 작은 값, 큰 값, 갯수를 구한다.
 ```java
 List<Integer> list = Arrays.asList(5, 9, 1);
