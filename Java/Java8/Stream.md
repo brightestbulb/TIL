@@ -90,7 +90,7 @@ System.out.println(list.stream().min(Integer::compare).orElse(-1));  // 1
 System.out.println(list.stream().max(Integer::compare).orElse(-1));  // 9
 ```
 
-### 활용
+## 활용
 **1.여러개의 리스트를 하나의 리스트로 병합 할 수 있다.**
 ```java
 List<String> list1 =  Arrays.asList("one", "two");
