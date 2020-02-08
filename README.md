@@ -36,5 +36,9 @@ Chrome 확장 프로그램 [Octotree](https://chrome.google.com/webstore/detail/
 
 
 ### Git
-
 * [Git 명령어](https://github.com/brightestbulb/TIL/blob/master/Git/%EB%AA%85%EB%A0%B9%EC%96%B4.md)
+
+
+### 알고리즘
+* [병합 정렬](https://github.com/brightestbulb/TIL/blob/master/Algorithm/MergeSort.md)
+
