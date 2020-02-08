@@ -95,6 +95,6 @@ System.out.println(list.stream().max(Integer::compare).orElse(-1));  // 9
 1. Stream은 재사용이 불가능하다.   
 2. parallelStream은 여러 쓰레드가 작업한다.    
 
-list.**parallelStream()**.map((x) ->{return x*2;}).forEach(x -> System.out.println(x));  // 10, 2, 8, 4, 6
-이렇게 하면 여러 쓰레드가 스트림에서 요소를 작업하고 쓰레드끼리 각자 작업한 값들을 처리해서 리턴한다.
+list.**parallelStream()**.map((x) ->{return x*2;}).forEach(x -> System.out.println(x));  // 10, 2, 8, 4, 6    
+이렇게 하면 여러 쓰레드가 스트림에서 요소를 작업하고 쓰레드끼리 각자 작업한 값들을 처리해서 리턴한다.    
 그렇기 때문에 결과과의 순서가 예상하는 바와 다를수가 있다.
