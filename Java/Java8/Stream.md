@@ -90,6 +90,51 @@ System.out.println(list.stream().min(Integer::compare).orElse(-1));  // 1
 System.out.println(list.stream().max(Integer::compare).orElse(-1));  // 9
 ```
 
+### 활용
+**1.여러개의 리스트를 하나의 리스트로 병합 할 수 있다.**
+```java
+List<String> list1 =  Arrays.asList("one", "two");
+List<String> list2 =  Arrays.asList("three","four","five");
+List<String> list3 =  Arrays.asList("six");
+List<String> finalList = Stream.of(list1, list2, list3).flatMap(Collection::stream).collect(Collectors.toList());
+System.out.println(finalList);  // [one, two, three, four, five, six]
+```
+
+**2.Map의 Value들을 하나의 리스트로 병합할 수 있다.**
+```java
+Map<String, List<Integer>> map = new LinkedHashMap<>();
+map.put("a", Arrays.asList(1, 2, 3));
+map.put("b", Arrays.asList(4, 5, 6));
+
+List<Integer> allValues = map.values() // Collection<List<Integer>>
+        .stream()                      // Stream<List<Integer>>
+        .flatMap(List::stream)         // Stream<Integer>
+        .collect(Collectors.toList());
+
+System.out.println(allValues);  // [1, 2, 3, 4, 5, 6]
+```
+
+**3.Map, List를 단일 연속 Stream으로 병합**
+```java
+        List<Map<String, String>> list = new ArrayList<>();
+        Map<String,String> map1 = new HashMap();
+        map1.put("1", "one");
+        map1.put("2", "two");
+
+        Map<String,String> map2 = new HashMap();
+        map2.put("3", "three");
+        map2.put("4", "four");
+        list.add(map1);
+        list.add(map2);
+
+
+        Set<String> output= list.stream()  //  Stream<Map<String, String>>
+                .map(Map::values)              // Stream<List<String>>
+                .flatMap(Collection::stream)   // Stream<String>
+                .collect(Collectors.toSet());  //Set<String>
+        // [one, two, three,four]
+```
+
 
 #### 주의 사항
 1. Stream은 재사용이 불가능하다.   
