@@ -1,7 +1,15 @@
 # Java Stream
 
-Stream은 Java에 추가된 기능으로 **배열, 컬랙션** 등의 저장 요소를 하나씩 참조하며 함수형 인터페이스(람다식)를 사용하며   
-반복적으로 처리할 수 있도록 해주는 기능이다.
+기존에 배열, 컬렉션을 다루는 방법은 for, foreach를 통해서 요소를 하나씩 꺼내서 다루었으나    
+자바8 이후로는 Stream의 람다를 통해 좀 더 간결하게 해결할 수 있다.    
+스트림은 **데이터의 흐름**이다. 배열, 컬렉션에 함수 여러개를 조합해서 원하는 결과를 얻을 수 있다.   
+람다를 활용하여 코드를 간결하게 하고 배열과 컬렉션을 함수형으로 처리할 수 있다.    
+또 병렬처리가 가능하여 쓰레드를 이용해 많은 요소들을 빠르게 처리할 수 있다.   
+
+스트림은 세 단계로 나뉜다.
+1. 생성 : 스트림 인스턴스 생성
+2. 가공 : 필터링, 맵핑 등 원하는 결과를 만든다.
+3. 결과 : 최종 결과를 만들어 낸다.   
 
 ## Stream 생성 방법
 ```java
@@ -62,6 +70,28 @@ List<Integer> list = Arrays.asList(5, 1, 4, 2, 3);
 list.stream().map((x) ->{return x*2;}).forEach(x -> System.out.println(x));  // 10, 2, 8, 4, 6
 ```
 
+```java
+List<String> alphabet = Arrays.asList("a", "b", "c");
+Stream<String> stream = alphabet.stream().map(String::toUpperCase);  // [A, B, C]
+```
+
+#### 3. flatMap
+새로운 스트림을 생성해서 리턴하는 람다를 넘겨야 한다. flatMap은 중첩 구조를 한 단계 제거하고 단일 컬렉션으로 만들어주는 역할을 한다.
+```java
+List<List<String>> list = Arrays.asList(Arrays.asList("a"), Arrays.asList("b"));  // [[a], [b]]
+```
+이제 flatMap을 사용하여 중첩 구조를 제거한다.
+
+```java
+List<String> flatList = list.stream().flatMap(Collection::stream).collect(Collectors.toList());  // [a, b]
+```
+
+다음은 성적표에 국영수 점수를 가져와 새로운 스트림을 만들어 평균을 구하는 코드이다.
+```java
+reportCard.stream().flatMapToInt(report -> IntStream.of(report.getKor(), report.getMath(), report.getEng()))
+.average().ifPresent(avg -> System.out.println(Math.round(avg * 10)/ 10.0));
+```
+
 ### 최종 연산
 ##### 1. reduce
 reduce는 값을 누적하여 계산할 때 사용한다. Collection에 있는 값 중 2개를 꺼내서 계산을 한다.   
@@ -78,6 +108,11 @@ List<Integer> list = Arrays.asList(1, 2, 3);
 
 Set<Integer> set = list.stream().collect(Collectors.toSet());  // list -> set
 set.forEach(x-> System.out.println(x));  //1, 2, 3
+```
+
+```java
+String [] arr = {"1", "2", "3"};
+arr.stream().collect(Collectors.toList()); // ["1", "2", "3"]
 ```
 
 ##### 3. min, max, count
