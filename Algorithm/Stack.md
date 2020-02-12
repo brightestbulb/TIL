@@ -37,30 +37,33 @@ public class LinkedListStack {
 
 
 ## 연결리스트 개념을 활용하여 Stack 구현
+
 ```java
 public class Node {
 
     private int data;
-    private Node nextNode;
-
+    private Node beforeNode;
+    
     public Node(int data){
-        this.data = data;
-        this.nextNode = nextNode;
+      this.data = data;
+      this.beforeNode = beforeNode;
     }
-
+    
     public void linkNode(Node node){
-        this.nextNode = node;
+      this.beforeNode = node;
     }
-
+    
     public int getData(){
-        return this.data;
+      return this.data;
     }
-
-    public Node getNextNode(){
-        return this.nextNode;
+    
+    public Node getbeforeNode(){
+      return this.beforeNode;
     }
 }
+```
 
+```java
 public class LinkedListStack {
 
     Node top;
@@ -69,10 +72,34 @@ public class LinkedListStack {
         this.top = null;
     }
 
-    private void push(int data){
+    public void push(int data){
         Node node = new Node(data);
-        node.linkNode(top);
-        top = node;
+        node.linkNode(this.top);
+        this.top = node;
+    }
+
+    public int pop(){
+
+        if(empty()){
+            throw new NullPointerException();
+        }
+        int data = this.top.getData();
+        top = top.getbeforeNode();
+
+        return data;
+    }
+
+    public int peek(){
+        return this.top.getData();
+    }
+
+    public boolean empty(){
+        return this.top == null;
+    }
+
+    public int search(int num){
+
+        return num;
     }
 }
 ```
