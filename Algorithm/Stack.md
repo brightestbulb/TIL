@@ -43,22 +43,22 @@ public class Node {
 
     private int data;
     private Node beforeNode;
-    
+
     public Node(int data){
-      this.data = data;
-      this.beforeNode = beforeNode;
+        this.data = data;
+        this.beforeNode = beforeNode;
     }
-    
-    public void linkNode(Node node){
-      this.beforeNode = node;
+
+    public void linkBeforeNode(Node node){
+        this.beforeNode = node;
     }
-    
+
     public int getData(){
-      return this.data;
+        return this.data;
     }
-    
+
     public Node getbeforeNode(){
-      return this.beforeNode;
+        return this.beforeNode;
     }
 }
 ```
@@ -66,16 +66,16 @@ public class Node {
 ```java
 public class LinkedListStack {
 
-    Node top;
+    Node topNode;
 
     public LinkedListStack(){
-        this.top = null;
+        this.topNode = null;
     }
 
     public void push(int data){
         Node node = new Node(data);
-        node.linkNode(this.top);
-        this.top = node;
+        node.linkBeforeNode(this.topNode);
+        this.topNode = node;
     }
 
     public int pop(){
@@ -83,23 +83,41 @@ public class LinkedListStack {
         if(empty()){
             throw new NullPointerException();
         }
-        int data = this.top.getData();
-        top = top.getbeforeNode();
+        int data = this.topNode.getData();
+        topNode = topNode.getbeforeNode();
 
         return data;
     }
 
     public int peek(){
-        return this.top.getData();
+        return this.topNode.getData();
     }
 
     public boolean empty(){
-        return this.top == null;
+        return this.topNode == null;
     }
 
     public int search(int num){
 
-        return num;
+        HashMap<Integer, Object> map = new HashMap<Integer, Object>();
+
+        int i = 1;
+
+        map.put(i, this.topNode.getData());
+
+        this.topNode = recursiveGetNode(this.topNode);
+        while(this.topNode != null){
+            map.put(++i, this.topNode.getData());
+            this.topNode= recursiveGetNode(this.topNode);
+        }
+
+        int size = map.size()+1;
+        return (Integer)map.get(size-num);
+    }
+
+    private Node recursiveGetNode(Node node){
+        node = this.topNode.getbeforeNode();
+        return node;
     }
 }
 ```
