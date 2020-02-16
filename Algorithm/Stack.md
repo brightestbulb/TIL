@@ -10,7 +10,6 @@ public class Node {
 
     public Node(int data){
         this.data = data;
-        this.beforeNode = beforeNode;
     }
 
     public void linkBeforeNode(Node node){
