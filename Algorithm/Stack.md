@@ -1,41 +1,5 @@
 # Stack
 
-## 자바 LinkedList 이용해서 Stack 구현
-```java
-public class LinkedListStack {
-
-    List<Integer> list = new LinkedList<Integer>();
-
-    public void push(int num){
-        list.add(num);
-    }
-
-    public int pop(){
-        int num = list.get(list.size()-1);
-        list.remove(list.size()-1);
-        return num;
-    }
-
-    public int peek(){
-        return list.get(list.size()-1);
-    }
-
-    public Boolean empty(){
-        Boolean b = false;
-        if(list.size()==0){
-            b = true;
-        }
-        return b;
-    }
-
-    public int search(int num){
-        return list.get(num);
-    }
-
-}
-```
-
-
 ## 연결리스트 개념을 활용하여 Stack 구현
 
 ```java
@@ -97,27 +61,24 @@ public class LinkedListStack {
         return this.topNode == null;
     }
 
-    public int search(int num){
+    public int search(int data){
 
-        HashMap<Integer, Object> map = new HashMap<Integer, Object>();
+        Node searchNode = this.topNode;
+        int index = 1;
 
-        int i = 1;
-
-        map.put(i, this.topNode.getData());
-
-        this.topNode = recursiveGetNode(this.topNode);
-        while(this.topNode != null){
-            map.put(++i, this.topNode.getData());
-            this.topNode= recursiveGetNode(this.topNode);
+        while(true){
+            if(searchNode.getData() == data){
+                break;
+            }else{
+                searchNode = searchNode.getbeforeNode();
+                ++index;
+                if(searchNode == null){
+                    index = -1;
+                    break;
+                }
+            }
         }
-
-        int size = map.size()+1;
-        return (Integer)map.get(size-num);
-    }
-
-    private Node recursiveGetNode(Node node){
-        node = this.topNode.getbeforeNode();
-        return node;
+        return index;
     }
 }
 ```
