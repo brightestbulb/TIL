@@ -34,7 +34,7 @@ public class LinkedListQueue {
 
     public void add(int val){
         Node newNode = new Node(val);
-        newNode.linkFrontNode(last);
+        newNode.linkBeforeNode(last);
         last = newNode;
     }
 
@@ -71,5 +71,6 @@ public class LinkedListQueue {
         }
         return val;
     }
+    
 }
 ```
