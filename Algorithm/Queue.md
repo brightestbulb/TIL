@@ -5,22 +5,22 @@
 ```java
 public class Node {
     private int data;
-    private Node beforeNode;
+    private Node NextNode;
 
     public Node(int data){
         this.data = data;
     }
 
-    public void linkBeforeNode(Node node){
-        this.beforeNode = node;
+    public void linkNextNode(Node node){
+        this.NextNode = node;
     }
 
     public int getData(){
         return this.data;
     }
 
-    public Node getbeforeNode(){
-        return this.beforeNode;
+    public Node getNextNode(){
+        return this.NextNode;
     }
 }
 ```
@@ -28,49 +28,28 @@ public class Node {
 ```java
 public class LinkedListQueue {
 
-    Node last;
     Node first;
-    Node second;
+    Node last;
 
     public void add(int val){
         Node newNode = new Node(val);
-        newNode.linkBeforeNode(last);
-        last = newNode;
+        if(first == null){
+            first = newNode;
+            last= newNode;
+        }else{
+            last.linkNextNode(newNode);
+            last = newNode;
+        }
     }
 
     public int peek(){  // 맨 앞 요소 반환
-
-        Node peekNode = last;
-
-        if(first == null) {
-            while(true){
-                if (peekNode.getBeforeNode() != null) {
-                    peekNode = peekNode.getBeforeNode();
-                } else {
-                    first = peekNode;
-                    break;
-                }
-            }
-        }
         return first.getData();
     }
 
     public int poll(){  // 맨 앞 요소 반환 후 삭제
-        int val = 0;
-        Node peekNode = last;
-
-        while(true){
-            if(peekNode.getBeforeNode() != null){
-                second = peekNode;
-                peekNode = peekNode.getBeforeNode();
-            }else{
-                val = peekNode.getData();
-                first = second;
-                break;
-            }
-        }
-        return val;
+        int data = first.getData();
+        first = first.getNextNode();
+        return data;
     }
-    
 }
 ```
