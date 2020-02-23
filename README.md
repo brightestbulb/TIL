@@ -22,7 +22,6 @@
 Chrome 확장 프로그램 [Octotree](https://chrome.google.com/webstore/detail/octotree/bkhaagjahfmjljalopjnoealnfndnagc)를 설치하면 좀 더 편하게 Github를 사용할 수 있다.
 
 
-
 ## 분류
 ### Java
 * [생성자 대신 정적 팩터리 메소드 사용](https://github.com/brightestbulb/TIL/blob/master/Java/Effective%20Java/2%EC%9E%A5.%20%EA%B0%9D%EC%B2%B4%EC%9D%98%20%EC%83%9D%EC%84%B1%EA%B3%BC%20%EC%82%AD%EC%A0%9C/%EA%B7%9C%EC%B9%991.%20%EC%83%9D%EC%84%B1%EC%9E%90%20%EB%8C%80%EC%8B%A0%20%EC%A0%95%EC%A0%81%20%ED%8C%A9%ED%84%B0%EB%A6%AC%20%EB%A9%94%EC%84%9C%EB%93%9C%EB%A5%BC%20%EC%82%AC%EC%9A%A9%ED%95%A0%20%EC%88%98%20%EC%97%86%EB%8A%94%EA%B0%80.md)
@@ -39,11 +38,17 @@ Chrome 확장 프로그램 [Octotree](https://chrome.google.com/webstore/detail/
 * [Git 명령어](https://github.com/brightestbulb/TIL/blob/master/Git/%EB%AA%85%EB%A0%B9%EC%96%B4.md)
 
 
+### 자료구조
+* [Stack](https://github.com/brightestbulb/TIL/blob/master/DataStructure/Stack.md)
+* [Queue](https://github.com/brightestbulb/TIL/blob/master/DataStructure/Queue.md)
+* [HashTable](https://github.com/brightestbulb/TIL/blob/master/DataStructure/HashTable.md)
+
+
 ### 알고리즘
+* [시간의 복잡도](https://github.com/brightestbulb/TIL/blob/master/Algorithm/%EC%8B%9C%EA%B0%84%EC%9D%98%20%EB%B3%B5%EC%9E%A1%EB%8F%84.md)
 * [병합 정렬](https://github.com/brightestbulb/TIL/blob/master/Algorithm/MergeSort.md)
 * [퀵 정렬](https://github.com/brightestbulb/TIL/blob/master/Algorithm/QuickSort.md)
-* [Stack](https://github.com/brightestbulb/TIL/blob/master/Algorithm/Stack.md)
-* [Queue](https://github.com/brightestbulb/TIL/blob/master/Algorithm/Queue.md)
+* [Hanoi Tower](https://github.com/brightestbulb/TIL/blob/master/Algorithm/HanoiTower.md)
 
 
 ### Web
