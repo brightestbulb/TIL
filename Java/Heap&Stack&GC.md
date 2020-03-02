@@ -89,3 +89,27 @@ public class Main {
 7. param에 있는 "name" 키값에 접근하여 해당 값을 name 변수에 저장한다. 이때 getNameInMap() Scope에서 Stack에 "name"이 추가되고, "name"은 param을 통해 name 키 값에 접근하여 그 값을 참조한다.
 8. "name"의 값을 출력하고 **}** 에 도달하여 getNameInMap() 함수의 지역 변수는 모두 Stack에서 pop되어 사라진다.
 9. main() 함수가 종료되면서 모든 변수가 Stack에서 pop되어 사라진다.
+
+
+## Garbage Collection
+
+### 예시.1
+```java
+public class Main {
+    public static void main(String[] args) {
+        String name = "brightest";
+        name += "bulb";
+        System.out.println(name);
+    }
+}
+```
+
+### 과정
+1. Stack에 name 변수를 할당하고, Heap에 String 타입으로 "brightest" 문자열을 할당한다.
+2. **name += "bulb";** 과정에서 String은 불변객체 이므로 기존에 있던 "brightest" String에 "bulb"을 붙이는게 아닌, 문자열 더하기 연산이 수행된 결과가 새롭게 Heap에 할당된다.
+3. Stack에 있는 name 변수가 Heap에 새로 할당된 "brightestbulb"를 참조하게 된다.
+4. 기존에 "brightest" 문자열은 참조하고 있는 변수가 없으므로 **Unreachable** Object가 된다.
+ 
+JVM의 GC는 Unreachable Object를 우선적으로 메모리에서 제거하여 메모리 공간을 확보한다. Unreachable Object란 Stack에서 도달할 수 없는 Heap 영역의 객체이다.
+Reachable Object를 참조하고 있는 오브젝트는 마킹하고, 마킹되어 있지 않은 Unreachable Object를 모두 제거하는 방식으로 처리한다.
+컬렉션을 사용한 경우에도 마찬가지로 Stack에 참조하는 변수가 없다면 Heap에 있는 Object는 GC 의해 제거된다. 
