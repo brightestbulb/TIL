@@ -1,9 +1,9 @@
-#Query 처리, 실행 순서
+# Query 처리, 실행 순서
 
 ## SQL 문법 순서
 ```sql
 SELECT
-FROM
+FROM****
 WHERE
 GROUP BY
 HAVING
