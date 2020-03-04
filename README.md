@@ -30,6 +30,7 @@ Chrome 확장 프로그램 [Octotree](https://chrome.google.com/webstore/detail/
 * [Stream](https://github.com/brightestbulb/TIL/blob/master/Java/Java8/Stream.md)
 * [체크, 언체크 예외](https://github.com/brightestbulb/TIL/blob/master/Java/%EC%B2%B4%ED%81%AC%EC%98%88%EC%99%B8%2C%20%EC%96%B8%EC%B2%B4%ED%81%AC%EC%98%88%EC%99%B8.md)
 * [Lambda](https://github.com/brightestbulb/TIL/blob/master/Java/Java8/Lambda.md)
+* [Lambda2](https://github.com/brightestbulb/TIL/blob/master/Java/Java8/Lambda2.md)
 
 
 ### Spring
@@ -60,8 +61,14 @@ Chrome 확장 프로그램 [Octotree](https://chrome.google.com/webstore/detail/
 * [자바스크립트 성능 향상 방법](https://github.com/brightestbulb/TIL/blob/master/Web/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%20%EC%84%B1%EB%8A%A5%20%ED%96%A5%EC%83%81%20%EB%B0%A9%EB%B2%95.md)
 
 
+### DB
+* [Query 처리, 실행 순서](https://github.com/brightestbulb/TIL/blob/master/OS/7.%EB%A9%94%EB%AA%A8%EB%A6%AC%20%EA%B4%80%EB%A6%AC.md)
+
+
 ### 운영 체제
 * [운영 체제 개요](https://github.com/brightestbulb/TIL/blob/master/OS/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%EC%9D%98%20%EC%A0%95%EC%9D%98.md)
 * [컴퓨터 시스템 동작 원리](https://github.com/brightestbulb/TIL/blob/master/OS/2.%EC%BB%B4%ED%93%A8%ED%84%B0%20%EC%8B%9C%EC%8A%A4%ED%85%9C%EC%9D%98%20%EB%8F%99%EC%9E%91%20%EC%9B%90%EB%A6%AC.md)
 * [인터럽트의 원리](https://github.com/brightestbulb/TIL/blob/master/OS/3.%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8%EC%9D%98%20%EC%9B%90%EB%A6%AC.md)
+* [프로세스 관리](https://github.com/brightestbulb/TIL/blob/master/OS/4.%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%20%EA%B4%80%EB%A6%AC.md)
+* [메모리 관리](https://github.com/brightestbulb/TIL/blob/master/OS/7.%EB%A9%94%EB%AA%A8%EB%A6%AC%20%EA%B4%80%EB%A6%AC.md)
 
