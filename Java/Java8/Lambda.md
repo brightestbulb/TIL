@@ -124,4 +124,84 @@ public static void main(String[] args){
 ```
 
 
+### 리턴값이 있는 람다식
+
+```java
+@FunctionalInterface
+public interface MyFuncInterface{
+    public int method(int x, int y);
+}
+```
+
+```java
+MyFuncInterface fi = (x, y) -> { . . . ;  return 값;}
+```
+
+```java
+MyFuncInterface fi = (x, y) -> x + y;      // return문만 있을 경우 중괄호 생략 가능
+MyFuncInterface fi = (x, y) -> sum(x, y);  // return sum(x, y); 
+```
+
+
+```java
+int result = fi.method(1, 2);
+```
+
+
+
+## 클래스 멤버와 로컬 변수 사용
+
+### 클래스의 멤버 사용
+
+```java
+public interface MyFunctionalInterface {
+    public void method();
+}
+```
+
+내부 중첩 클래스에서 람다식을 사용할 경우 this의 접근에 대해 살펴보자.
+
+```java
+public class UsingThis{
+
+    public int outterVal = 10;
+
+    public class InnerClass {
+        int innerVal = 20;
+
+        public void method(){
+            MyFunctionalInterface fi = () -> {
+                System.out.println("outterVal : " + outterVal);
+                System.out.println("outterVal : " + UsingThis.this.outterVal);  // 바깥 클래스에 접근하려면 클래스명.this 를 붙여줘야 한다.
+
+                System.out.println("innerVal : " + innerVal);
+                System.out.println("innerVal : " + this.innerVal);  // 람다식 내부에서 쓰이는 this는 람다식을 포함하는 클래스에 접근한다.
+            };
+            fi.method();
+        }
+    }
+}
+```
+
+```java
+    public static void main(String[] args){
+
+        UsingThis us = new UsingThis();
+        UsingThis.InnerClass inner = us.new InnerClass();
+        inner.method();
+    }
+```
+
+실행 결과
+```java
+outterVal : 10
+outterVal : 10
+innerVal : 20
+innerVal : 20
+```
+
+
+
+
+
 출처 : 이것이 자바다 -신용권
