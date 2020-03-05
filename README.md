@@ -26,11 +26,11 @@ Chrome 확장 프로그램 [Octotree](https://chrome.google.com/webstore/detail/
 ### Java
 * [생성자 대신 정적 팩터리 메소드 사용](https://github.com/brightestbulb/TIL/blob/master/Java/Effective%20Java/2%EC%9E%A5.%20%EA%B0%9D%EC%B2%B4%EC%9D%98%20%EC%83%9D%EC%84%B1%EA%B3%BC%20%EC%82%AD%EC%A0%9C/%EA%B7%9C%EC%B9%991.%20%EC%83%9D%EC%84%B1%EC%9E%90%20%EB%8C%80%EC%8B%A0%20%EC%A0%95%EC%A0%81%20%ED%8C%A9%ED%84%B0%EB%A6%AC%20%EB%A9%94%EC%84%9C%EB%93%9C%EB%A5%BC%20%EC%82%AC%EC%9A%A9%ED%95%A0%20%EC%88%98%20%EC%97%86%EB%8A%94%EA%B0%80.md)
 * [생성자 대신 Builder 패턴](https://github.com/brightestbulb/TIL/blob/master/Java/Effective%20Java/2%EC%9E%A5.%20%EA%B0%9D%EC%B2%B4%EC%9D%98%20%EC%83%9D%EC%84%B1%EA%B3%BC%20%EC%82%AD%EC%A0%9C/%EA%B7%9C%EC%B9%992.%20%EC%83%9D%EC%84%B1%EC%9E%90%20%EC%9D%B8%EC%9E%90%EA%B0%80%20%EB%A7%8E%EC%9D%84%20%EB%95%8C%EB%8A%94%20Builder%20%ED%8C%A8%ED%84%B4%20%EA%B3%A0%EB%A0%A4.md)
-* [싱글톤](https://github.com/brightestbulb/TIL/blob/master/Java/Effective%20Java/2%EC%9E%A5.%20%EA%B0%9D%EC%B2%B4%EC%9D%98%20%EC%83%9D%EC%84%B1%EA%B3%BC%20%EC%82%AD%EC%A0%9C/%EA%B7%9C%EC%B9%991.%20%EC%83%9D%EC%84%B1%EC%9E%90%20%EB%8C%80%EC%8B%A0%20%EC%A0%95%EC%A0%81%20%ED%8C%A9%ED%84%B0%EB%A6%AC%20%EB%A9%94%EC%84%9C%EB%93%9C%EB%A5%BC%20%EC%82%AC%EC%9A%A9%ED%95%A0%20%EC%88%98%20%EC%97%86%EB%8A%94%EA%B0%80.md)
+* [싱글톤](https://github.com/brightestbulb/TIL/blob/master/Java/%EC%8B%B1%EA%B8%80%ED%86%A4.md)
 * [Stream](https://github.com/brightestbulb/TIL/blob/master/Java/Java8/Stream.md)
 * [체크, 언체크 예외](https://github.com/brightestbulb/TIL/blob/master/Java/%EC%B2%B4%ED%81%AC%EC%98%88%EC%99%B8%2C%20%EC%96%B8%EC%B2%B4%ED%81%AC%EC%98%88%EC%99%B8.md)
 * [Lambda](https://github.com/brightestbulb/TIL/blob/master/Java/Java8/Lambda.md)
-* [Lambda2](https://github.com/brightestbulb/TIL/blob/master/Java/Java8/Lambda2.md)
+* [동적 파라미터화](https://github.com/brightestbulb/TIL/blob/master/Java/%EB%8F%99%EC%A0%81%20%ED%8C%8C%EB%9D%BC%EB%AF%B8%ED%84%B0%ED%99%94.md)
 
 
 ### Spring
@@ -71,4 +71,5 @@ Chrome 확장 프로그램 [Octotree](https://chrome.google.com/webstore/detail/
 * [인터럽트의 원리](https://github.com/brightestbulb/TIL/blob/master/OS/3.%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8%EC%9D%98%20%EC%9B%90%EB%A6%AC.md)
 * [프로세스 관리](https://github.com/brightestbulb/TIL/blob/master/OS/4.%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%20%EA%B4%80%EB%A6%AC.md)
 * [메모리 관리](https://github.com/brightestbulb/TIL/blob/master/OS/7.%EB%A9%94%EB%AA%A8%EB%A6%AC%20%EA%B4%80%EB%A6%AC.md)
+* [가상 메모리](https://github.com/brightestbulb/TIL/blob/master/OS/8.%EA%B0%80%EC%83%81%20%EB%A9%94%EB%AA%A8%EB%A6%AC.md)
 
