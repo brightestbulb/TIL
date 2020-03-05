@@ -185,7 +185,6 @@ public class UsingThis{
 
 ```java
     public static void main(String[] args){
-
         UsingThis us = new UsingThis();
         UsingThis.InnerClass inner = us.new InnerClass();
         inner.method();
