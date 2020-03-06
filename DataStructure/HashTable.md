@@ -39,6 +39,27 @@ System.out.println(getHashCode("key"));  // 112921
 ```
 
 ## 구현
+
+```java
+public class Node {
+    private String key;
+    private String value;
+
+    public Node(String key, String value){
+        this.key = key;
+        this.value = value;
+    }
+
+    public String getKey() {
+        return key;
+    }
+
+    public String getValue() {
+        return value;
+    }
+}
+```
+
 ```java
 public class HashTable {
 
