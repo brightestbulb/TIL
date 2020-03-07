@@ -1,4 +1,4 @@
-# Heap
+# Tree
 
 트리의 선회 방법에는 3가지가 있다.   
 - 중위 순회 Left -> Root -> Right
@@ -7,7 +7,7 @@
 
 Root를 기준으로 이름이 붙여졌고, 나머지는 Left, Right 순서로 진행된다.
 
-![](https://github.com/brightestbulb/TIL/blob/master/DataStructure/img/heap.png?raw=true)
+![](https://github.com/brightestbulb/TIL/blob/master/DataStructure/img/tree.png?raw=true)
 
 - 중위 순회 ( 4-> 2-> 5-> 1-> 3 )
 - 전위 순회 ( 1-> 2-> 4-> 5-> 3 )
