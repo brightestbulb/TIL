@@ -39,46 +39,32 @@ public class Tree {
         return node;
     }
 
-    //  [반복문] 중위 순회  ( 4->2->5->1->3 )
-    public List<Integer> inOrder(Node root){
+   //  중위순회  ( 4->2->5->1->3 )
+   public void inOrder(Node node) {
+       if(node != null) {
+           inOrder(node.left);
+           System.out.println(node.data);
+           inOrder(node.right);
+       }
+   }
 
-        List<Node> box = new ArrayList<Node>();
-        List<Integer> result = new ArrayList<Integer>();
+   //  전위순회  ( 1->2->4->5->3 )
+   public void preOrder(Node node) {
+       if(node != null) {
+           System.out.println(node.data);
+           inOrder(node.left);
+           inOrder(node.right);
+       }
+   }
 
-        box.add(root);
-        Node node = root.getLeft();
-        while(node != null){
-            box.add(node);
-            Node leftNode = node.getLeft();
-            if(leftNode == null){  // left 제일 마지막이면
-                node = null;
-            }else{
-                box.add(leftNode);
-                node = leftNode.getLeft();
-            }
-        }
-
-        for(int i=box.size()-1; i>=0; i--){
-            Node n = box.get(i);
-            result.add(n.getData());
-
-            Node right = n.getRight();
-            if(right != null){
-                result.add(right.getData());
-            }
-        }
-
-        return result;
-    }
-
-    // [Recursive]
-    public void inOrderRecursive(Node node) {
-        if(node != null) {
-            inOrderRecursive(node.left);
-            System.out.println(node.data);
-            inOrderRecursive(node.right);
-        }
-    }
+   // 후위순회 ( 4->5->2->3->1 )
+   public void postOrder(Node node) {
+       if(node != null) {
+           inOrder(node.left);
+           inOrder(node.right);
+           System.out.println(node.data);
+       }
+   }
 }
 ```
 
@@ -92,16 +78,8 @@ public class Tree {
         Node n2 = tree.createNode(2, n4, n5);
         Node n1 = tree.createNode(1, n2, n3);  // root
 
-
-        // 반복문으로 구현한 중위 선회 출력 
-        List<Integer> result = tree.inOrder(n1);
-
-        for(int i=0; i<result.size(); i++){
-            System.out.println(result.get(i));        
-        }
-
-        // 재귀로 구현한 중위 선회 출력
-        tree.inOrderRecursive(n1);
-
+        tree.inOrder(n1);
+        tree.preOrder(n1);
+        tree.postOrder(n1);
     }
 ```
