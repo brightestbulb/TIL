@@ -35,6 +35,8 @@ Chrome 확장 프로그램 [Octotree](https://chrome.google.com/webstore/detail/
 * [재귀를 쓰는 이유](https://github.com/brightestbulb/TIL/blob/master/Java/%EC%9E%AC%EA%B7%80%EB%A5%BC%20%EC%93%B0%EB%8A%94%20%EC%9D%B4%EC%9C%A0.md)
 * [Stack Overflow](https://github.com/brightestbulb/TIL/blob/master/Java/Stack%20Overflow.md)
 * [Interface](https://github.com/brightestbulb/TIL/blob/master/Java/Interface.md)
+* [Heap&Stack&GC](https://github.com/brightestbulb/TIL/blob/master/Java/Heap%26Stack%26GC.md)
+* [JVM](https://github.com/brightestbulb/TIL/blob/master/Java/JVM.md)
 
 
 ### Spring
