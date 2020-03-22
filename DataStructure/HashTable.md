@@ -4,7 +4,7 @@
 
 HashTable은 Key/Value를 저장하는 데이터 구조이다.   
 예를들어 차 이름을 Key, 가격을 Value로 하고 전체 데이터 양을 10개라고 했을 때,    
-1. **index = hashFunc("avante") % 10;** 를 통해서 index 값을 정한다.
+1. **index = hashFunc("avante") % 10(전체 갯수);** 를 통해서 index 값을 정한다.
 2. array[index] = 2000;
 이렇게 저장한다.   
  
@@ -12,7 +12,7 @@ HashTable은 Key/Value를 저장하는 데이터 구조이다.
 
 
 ## Key 충돌
-HashTable에는 문제가 있는데 hashFunc(key) % Array.size(); 값이 중복 될 수 있다.   
+HashTable에는 문제가 있는데 hashFunc(key) % Array.length; 값이 중복될 수 있다.   
 예를들어 hashFunc(key)값이 0,10,20,30 있다면, 이 값들을 10으로 나눈 나머지가 0으로 중복됨을 알 수 있다.
 이로써 키 값이 0으로 중복되는 현상이 발생하는데, 이를 **Key 충돌**이라고 한다.
 
@@ -20,7 +20,7 @@ HashTable에는 문제가 있는데 hashFunc(key) % Array.size(); 값이 중복 
 ## Key 충돌 해결 방식 ( Separate Chaining 방식 )
 LinkedList를 이용하는 방식으로써 JDK 내부에서 사용하고 있다.
 만약 같은 index로 인해 충돌이 발생하면 그 index가 가리키고 있는 배열 저장 공간에 LinkedList 추가를 통해 데이터를 저장하고 중복된 index가 가리키는 값들을 포인터를 통해 관리한다.
-이렇게 충돌을 해결한다. 데이터를 가져올 때는 Key에 대한 index를 구한 후, index가 가리키고 있는 LinkedList를 선형 검색하여 해당 key에 대한 데이터를 리턴한다. 
+이렇게 충돌을 해결한다. 데이터를 가져올 때는 Key에 대한 index를 구한 후, index가 가리키고 있는 LinkedList를 **선형 검색**하여 해당 key에 대한 데이터를 리턴한다. 
 
 
 ## 해쉬 함수
