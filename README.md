@@ -65,6 +65,7 @@ Chrome 확장 프로그램 [Octotree](https://chrome.google.com/webstore/detail/
 * [버블 정렬](https://github.com/brightestbulb/TIL/blob/master/Algorithm/BubbleSort.md)
 * [탑](https://github.com/brightestbulb/TIL/blob/master/Algorithm/programmers/tower.md)
 * [완주하지 못한 선수](https://github.com/brightestbulb/TIL/blob/master/Algorithm/programmers/maraton.md)
+* [K번째 수](https://github.com/brightestbulb/TIL/blob/master/Algorithm/programmers/kThNumber.md)
 
 
 ### Web
