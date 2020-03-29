@@ -45,7 +45,7 @@ https로, 그렇지 않으면 http로 첫 요청을 보낸다.
 
 ### 9. 웹 브라우저의 그림 그리기
 1. 구문 분석 (HTML, CSS, JS) + 렌더링 ( DOM Tree 구성 - 렌더 트리 구성 - 렌더트리 레이아웃 배치 - 렌더트리 그리기 )
-2.   HTML parsing, CSS parsing, Page Rendering, GPU Rendering 을 통해 그림을 그려냄
+2. HTML parsing, CSS parsing, Page Rendering, GPU Rendering 을 통해 그림을 그려냄
 
 
 
