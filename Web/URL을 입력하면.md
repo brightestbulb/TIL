@@ -28,6 +28,9 @@ https로, 그렇지 않으면 http로 첫 요청을 보낸다.
 2. 이때, OSI(4계층 - transport Layer) 에서 Session을 연결할 때 TCP 연결을 진행
 
 ### 6. HTTPS인 경우 TLS(Transport Layer Security) handshake가 추가된다.
+HTTP는 외부의 공격이나 스니핑에 매우 취약한 프로토콜이다. 암호화하기 위해서는 HTTP TLS 레이어를 입힌 HTTPS 프로토콜을 사용한다.
+암호화를 위해서는 클라이언트와 서버간에 암호화 알고리즘과 키를 교환하는 handshake 과정이 필요하다.
+거기다 HTTPS 인증서를 검증하는 Online Certificate Status Protocol을 통해 인증서 및 인증 기관이 유효한지도 판단한다.
 
 ### 7. HTTP 프로토콜로 요청한다.
 1. Client가 서버에 HTTP 프로토콜을 요청한다.
