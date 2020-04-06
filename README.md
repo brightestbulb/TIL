@@ -55,6 +55,7 @@ Chrome 확장 프로그램 [Octotree](https://chrome.google.com/webstore/detail/
 * [Queue](https://github.com/brightestbulb/TIL/blob/master/DataStructure/Queue.md)
 * [HashTable](https://github.com/brightestbulb/TIL/blob/master/DataStructure/HashTable.md)
 * [Tree](https://github.com/brightestbulb/TIL/blob/master/DataStructure/Tree.md)
+* [Stack 2개로 Queue 만들기](https://github.com/brightestbulb/TIL/blob/master/DataStructure/Stack2%EA%B0%9C%EB%A1%9CQueue%EB%A7%8C%EB%93%A4%EA%B8%B0.md)
 
 
 ### 알고리즘
