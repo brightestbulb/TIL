@@ -94,3 +94,59 @@ public static void main(String[] args) throws IOException {
 
 2
 ```
+
+
+## 최대힙
+```java
+public class MaxHeap {
+    private ArrayList<Integer> heap;
+
+    public MaxHeap(){
+        heap = new ArrayList<>();
+        heap.add(1000000);  // 인덱스 1부터 시작
+    }
+
+    public void insert(int val){
+        heap.add(val);
+        int p = heap.size()-1;
+
+        //루트까지 이동, 자식노드가 더 크면 swap
+        while(p>1 && heap.get(p/2)<heap.get(p)){
+            int tmp = heap.get(p/2);
+            heap.set(p/2, heap.get(p));
+            heap.set(p, tmp);
+
+            p = p/2;
+        }
+    }
+
+    public void delete(){
+        if(heap.size()-1<1){
+            return;
+        }
+
+        heap.set(1, heap.get(heap.size()-1));
+        heap.remove(heap.size()-1);
+
+        int pos = 1;
+        while(pos*2< heap.size()){
+            int max = heap.get(pos*2);
+            int maxPos = pos*2;
+
+            if(pos*2+1 < heap.size() && max < heap.get(pos*2+1)){
+                max = heap.get(pos*2+1);
+                maxPos = pos*2+1;
+            }
+
+            if(heap.get(pos) > max){
+                break;
+            }
+
+            int tmp = heap.get(pos);
+            heap.set(pos, heap.get(maxPos));
+            heap.set(maxPos, tmp);
+            pos = maxPos;
+        }
+    }
+}
+```
