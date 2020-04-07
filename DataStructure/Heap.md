@@ -99,6 +99,7 @@ public static void main(String[] args) throws IOException {
 ## 최대힙
 ```java
 public class MaxHeap {
+
     private ArrayList<Integer> heap;
 
     public MaxHeap(){
