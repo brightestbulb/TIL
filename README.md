@@ -55,6 +55,7 @@ Chrome 확장 프로그램 [Octotree](https://chrome.google.com/webstore/detail/
 * [Queue](https://github.com/brightestbulb/TIL/blob/master/DataStructure/Queue.md)
 * [HashTable](https://github.com/brightestbulb/TIL/blob/master/DataStructure/HashTable.md)
 * [Tree](https://github.com/brightestbulb/TIL/blob/master/DataStructure/Tree.md)
+* [Heap](https://github.com/brightestbulb/TIL/blob/master/DataStructure/Heap.md)
 * [Stack 2개로 Queue 만들기](https://github.com/brightestbulb/TIL/blob/master/DataStructure/Stack2%EA%B0%9C%EB%A1%9CQueue%EB%A7%8C%EB%93%A4%EA%B8%B0.md)
 
 
@@ -78,6 +79,7 @@ Chrome 확장 프로그램 [Octotree](https://chrome.google.com/webstore/detail/
 * [URL을 입력하면?](https://github.com/brightestbulb/TIL/blob/master/Web/URL%EC%9D%84%20%EC%9E%85%EB%A0%A5%ED%95%98%EB%A9%B4.md)
 * [Apache,Tomcat](https://github.com/brightestbulb/TIL/blob/master/Web/Apache%2C%20Tomcat%EC%9D%98%20%EC%B0%A8%EC%9D%B4.md)
 * [Process,Thread](https://github.com/brightestbulb/TIL/blob/master/Web/Process%26Thread.md)
+* [Cookie,Session](https://github.com/brightestbulb/TIL/blob/master/Web/Cookie%26Session.md)
 
 
 ### DB
