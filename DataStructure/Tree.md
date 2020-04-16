@@ -24,7 +24,6 @@ public class Node {
 }
 ```
 
-반복문을 사용한 예시와, 재귀를 사용한 예시 두가지로 중위 순회를 직접 구현했다.
 ```java
 public class Tree {
 
