@@ -70,6 +70,11 @@ Chrome 확장 프로그램 [Octotree](https://chrome.google.com/webstore/detail/
 * [K번째 수](https://github.com/brightestbulb/TIL/blob/master/Algorithm/programmers/kThNumber.md)
 * [Graph](https://github.com/brightestbulb/TIL/blob/master/Algorithm/Graph.md)
 * [Graph_BFS](https://github.com/brightestbulb/TIL/blob/master/Algorithm/Graph_BFS.md)
+* [다음 순열](https://github.com/brightestbulb/TIL/blob/master/Algorithm/%EC%99%84%EC%A0%84%ED%83%90%EC%83%89/%EB%8B%A4%EC%9D%8C%EC%88%9C%EC%97%B4.md)
+* [이전 순열](https://github.com/brightestbulb/TIL/blob/master/Algorithm/%EC%99%84%EC%A0%84%ED%83%90%EC%83%89/%EC%9D%B4%EC%A0%84%EC%88%9C%EC%97%B4.md)
+* [체육복](https://github.com/brightestbulb/TIL/blob/master/Algorithm/programmers/%EC%B2%B4%EC%9C%A1%EB%B3%B5.md)
+* [모의고사](https://github.com/brightestbulb/TIL/blob/master/Algorithm/programmers/%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC.md)
+
 
 
 ### Web
