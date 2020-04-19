@@ -1,6 +1,5 @@
 ## 문제
-![](https://github.com/brightestbulb/TIL/blob/master/Algorithm/img/kThNumber.png?raw=true)
-
+https://programmers.co.kr/learn/courses/30/lessons/42748
 
 ## 나의 풀이
 ```java
