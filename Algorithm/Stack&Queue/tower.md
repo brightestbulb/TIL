@@ -1,6 +1,5 @@
 ## 문제
-![](https://github.com/brightestbulb/TIL/blob/master/Algorithm/img/tower1.png?raw=true)
-![](https://github.com/brightestbulb/TIL/blob/master/Algorithm/img/tower2.png?raw=true)
+https://programmers.co.kr/learn/courses/30/lessons/42588
 
 ## 나의 풀이
 ```java
@@ -70,5 +69,3 @@ class Solution {
     }
 }
 ```
-
-출처 : https://programmers.co.kr/learn/courses/30/lessons/42588
