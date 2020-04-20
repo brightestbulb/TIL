@@ -89,6 +89,7 @@ Chrome 확장 프로그램 [Octotree](https://chrome.google.com/webstore/detail/
 
 ### DB
 * [Query 처리, 실행 순서](https://github.com/brightestbulb/TIL/blob/master/OS/7.%EB%A9%94%EB%AA%A8%EB%A6%AC%20%EA%B4%80%EB%A6%AC.md)
+* [정규화](https://github.com/brightestbulb/TIL/blob/master/DB/%EC%A0%95%EA%B7%9C%ED%99%94.md)
 
 
 ### 운영 체제
