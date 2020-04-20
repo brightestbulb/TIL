@@ -61,19 +61,20 @@ Chrome 확장 프로그램 [Octotree](https://chrome.google.com/webstore/detail/
 
 ### 알고리즘
 * [시간의 복잡도](https://github.com/brightestbulb/TIL/blob/master/Algorithm/%EC%8B%9C%EA%B0%84%EC%9D%98%20%EB%B3%B5%EC%9E%A1%EB%8F%84.md)
-* [병합 정렬](https://github.com/brightestbulb/TIL/blob/master/Algorithm/MergeSort.md)
-* [퀵 정렬](https://github.com/brightestbulb/TIL/blob/master/Algorithm/QuickSort.md)
-* [Hanoi Tower](https://github.com/brightestbulb/TIL/blob/master/Algorithm/HanoiTower.md)
-* [버블 정렬](https://github.com/brightestbulb/TIL/blob/master/Algorithm/BubbleSort.md)
-* [탑](https://github.com/brightestbulb/TIL/blob/master/Algorithm/programmers/tower.md)
-* [완주하지 못한 선수](https://github.com/brightestbulb/TIL/blob/master/Algorithm/programmers/maraton.md)
-* [K번째 수](https://github.com/brightestbulb/TIL/blob/master/Algorithm/programmers/kThNumber.md)
+* [병합 정렬](https://github.com/brightestbulb/TIL/blob/master/Algorithm/sort/MergeSort.md)
+* [퀵 정렬](https://github.com/brightestbulb/TIL/blob/master/Algorithm/sort/QuickSort.md)
+* [Hanoi Tower](https://github.com/brightestbulb/TIL/blob/master/Algorithm/recursive/HanoiTower.md)
+* [버블 정렬](https://github.com/brightestbulb/TIL/blob/master/Algorithm/sort/BubbleSort.md)
+* [탑](https://github.com/brightestbulb/TIL/blob/master/Algorithm/Stack%26Queue/tower.md)
+* [완주하지 못한 선수](https://github.com/brightestbulb/TIL/blob/master/Algorithm/hash/maraton.md)
+* [K번째 수](https://github.com/brightestbulb/TIL/blob/master/Algorithm/sort/kThNumber.md)
 * [Graph](https://github.com/brightestbulb/TIL/blob/master/Algorithm/Graph.md)
 * [Graph_BFS](https://github.com/brightestbulb/TIL/blob/master/Algorithm/Graph_BFS.md)
 * [다음 순열](https://github.com/brightestbulb/TIL/blob/master/Algorithm/%EC%99%84%EC%A0%84%ED%83%90%EC%83%89/%EB%8B%A4%EC%9D%8C%EC%88%9C%EC%97%B4.md)
 * [이전 순열](https://github.com/brightestbulb/TIL/blob/master/Algorithm/%EC%99%84%EC%A0%84%ED%83%90%EC%83%89/%EC%9D%B4%EC%A0%84%EC%88%9C%EC%97%B4.md)
-* [체육복](https://github.com/brightestbulb/TIL/blob/master/Algorithm/programmers/%EC%B2%B4%EC%9C%A1%EB%B3%B5.md)
-* [모의고사](https://github.com/brightestbulb/TIL/blob/master/Algorithm/programmers/%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC.md)
+* [모든 순열](https://github.com/brightestbulb/TIL/blob/master/Algorithm/%EC%99%84%EC%A0%84%ED%83%90%EC%83%89/%EB%AA%A8%EB%93%A0%EC%88%9C%EC%97%B4.md)
+* [체육복](https://github.com/brightestbulb/TIL/blob/master/Algorithm/greedy/%EC%B2%B4%EC%9C%A1%EB%B3%B5.md)
+* [모의고사](https://github.com/brightestbulb/TIL/blob/master/Algorithm/%EC%99%84%EC%A0%84%ED%83%90%EC%83%89/%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC.md)
 
 
 
