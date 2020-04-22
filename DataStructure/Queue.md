@@ -31,7 +31,7 @@ public class LinkedListQueue {
     Node first;
     Node last;
 
-    public void add(int val){
+    public void offer(int val){  // 값 추가
         Node newNode = new Node(val);
         if(first == null){
             first = newNode;

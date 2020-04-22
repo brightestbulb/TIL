@@ -26,7 +26,7 @@ Car 클래스에서 Comparable 인터페이스의 compareTo()를 재정의하여
 ```
 
 ```java
-public class Car implements Comparable<Object>{
+public class Car implements Comparable<Car>{
 
     private String name;
     private int price;
@@ -45,9 +45,9 @@ public class Car implements Comparable<Object>{
     }
 
     @Override
-    public int compareTo(Object o) {
+    public int compareTo(Car o) {
         // Car 객체의 name을 비교
-        return name.compareTo(((Car)o).name);
+        return name.compareTo(o.name);
     }
 }
 ```
@@ -62,8 +62,8 @@ compare()는 리턴값이 양수면 두 객체의 자리를 바꿔주는 역할�
 Arrays.sort(arr, new Comparator<Car>() {
     @Override
     public int compare(Car o1, Car o2) {
-        int p1 = ((Car) o1).getPrice();
-        int p2 = ((Car) o2).getPrice();
+        int p1 = o1.getPrice();
+        int p2 = o2.getPrice();
         return p1 > p2 ? -1 : (p1 == p2 ? 0 : 1);
     }
 });
@@ -76,8 +76,8 @@ for(Car c : arr){
 Arrays.sort(arr, new Comparator<Car>() {
     @Override
     public int compare(Car o1, Car o2) {
-        int p1 = ((Car) o1).getPrice();
-        int p2 = ((Car) o2).getPrice();
+        int p1 = o1.getPrice();
+        int p2 = o2.getPrice();
         return p1 > p2 ? 1 : (p1 == p2 ? 0 : -1);
     }
 });
