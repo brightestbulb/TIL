@@ -84,3 +84,26 @@ sonata
 avente
 morning
 ```
+
+
+```java
+PriorityQueue<Integer> sv = new PriorityQueue<Integer>();
+sv.offer(5);
+sv.offer(1);
+sv.offer(3);
+sv.offer(4);
+sv.offer(2);
+
+while(!sv.isEmpty()){
+    System.out.println(sv.poll());
+}
+```
+
+출력
+```java
+1
+2
+3
+4
+5
+```
