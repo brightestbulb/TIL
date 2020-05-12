@@ -33,9 +33,6 @@ public class WASMain {
 
     private static void handleSocket(Socket socket) throws IOException {
 
-        OutputStream os = socket.getOutputStream(); // 클라이언트에게 데이터를 보내기 위한 작업
-        PrintWriter pw = new PrintWriter(new OutputStreamWriter(os));
-
         InputStream is = socket.getInputStream();
         BufferedReader br = new BufferedReader(new InputStreamReader(is));
 
@@ -76,9 +73,10 @@ public class WASMain {
 
         System.out.println(request);
 
-        String baseDir = "/tmp/wasroot";
+        String baseDir = "/opt/workspace/algoStudy/src/was";
         String fileName = request.getPath();
 
+        // 원하는 요청에 맞게 html 파일을 보여준다.
         if("/".equals(fileName)){
             fileName = "/index.html";
         }else if(fileName.endsWith(".png")){
@@ -94,20 +92,19 @@ public class WASMain {
             contentType = "image/png";
         }
 
+        OutputStream os = socket.getOutputStream(); // 클라이언트에게 데이터를 보내기 위한 작업
+        PrintWriter pw = new PrintWriter(new OutputStreamWriter(os));
         File file = new File(fileName); // java.io.File
         long fileLength = file.length();
 
         if(file.isFile()){
             pw.println("HTTP/1.1 200 OK");
-            pw.println("Content-Type: " + contentType);
-            pw.println("Content-Length: " + fileLength);
-            pw.println();
         }else{
             pw.println("HTTP/1.1 404 OK");
-            pw.println("Content-Type: " + contentType);
-            pw.println("Content-Length: " + fileLength);
-            pw.println();
         }
+        pw.println("Content-Type: " + contentType);
+        pw.println("Content-Length: " + fileLength);
+        pw.println();
 
         pw.flush();  // 헤더와 빈줄을 char 형식으로 출력
 
@@ -124,7 +121,6 @@ public class WASMain {
         socket.close();  // 클라이언트와 접속 close
     }
 }
-
 ```
 
 ```java
