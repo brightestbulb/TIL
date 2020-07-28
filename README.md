@@ -51,6 +51,10 @@ Chrome 확장 프로그램 [Octotree](https://chrome.google.com/webstore/detail/
 ### Git
 * [Git 명령어](https://github.com/brightestbulb/TIL/blob/master/Git/%EB%AA%85%EB%A0%B9%EC%96%B4.md)
 
+### JS
+* [closure](https://github.com/brightestbulb/TIL/blob/master/JavaScript/Effective%20JS/closure.md)
+* [prototype](https://github.com/brightestbulb/TIL/blob/master/JavaScript/Prototype.md)
+* [event 버블링, 캡쳐, 위임](https://github.com/brightestbulb/TIL/blob/master/JavaScript/%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%EB%B2%84%EB%B8%94%EB%A7%81%2C%20%EC%BA%A1%EC%B3%90%2C%20%EC%9C%84%EC%9E%84.md)
 
 ### 자료구조
 * [Stack](https://github.com/brightestbulb/TIL/blob/master/DataStructure/Stack.md)
@@ -88,6 +92,7 @@ Chrome 확장 프로그램 [Octotree](https://chrome.google.com/webstore/detail/
 * [Apache,Tomcat](https://github.com/brightestbulb/TIL/blob/master/Web/Apache%2C%20Tomcat%EC%9D%98%20%EC%B0%A8%EC%9D%B4.md)
 * [Process,Thread](https://github.com/brightestbulb/TIL/blob/master/Web/Process%26Thread.md)
 * [Cookie,Session](https://github.com/brightestbulb/TIL/blob/master/Web/Cookie%26Session.md)
+* [Web Cache](https://github.com/brightestbulb/TIL/blob/master/Web/Cache.md)
 
 
 ### DB
